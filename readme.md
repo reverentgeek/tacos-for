@@ -7,7 +7,7 @@ A command-line tool for calculating the number of tacos you're gonna need for yo
 
    ╭──────────────────────────────────────────╮
    │                                          │
-   │   You're gonna need at least 8 tacos!   │
+   │   You're gonna need at least 8 tacos!    │
    │                                          │
    ╰──────────────────────────────────────────╯
 ```
