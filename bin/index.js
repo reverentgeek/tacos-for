@@ -1,9 +1,8 @@
 #!/usr/bin/env node
-"use strict";
-
-const yargs = require( "yargs" );
-const chalk = require( "chalk" );
-const boxen = require( "boxen" );
+import yargs from "yargs/yargs";
+import { hideBin } from "yargs/helpers";
+import chalk from "chalk";
+import boxen from "boxen";
 
 const boxenOptions = {
 	padding: 1,
@@ -11,11 +10,11 @@ const boxenOptions = {
 	borderStyle: "round"
 };
 
-const options = yargs
+const options = yargs( hideBin( process.argv ) )
 	.usage( "$0 <number-of-people> [--tacos-per-person=3]" )
 	.demand( 1 )
 	.default( "tacos-per-person", 3 )
-	.argv;
+	.parse();
 
 if ( options._.length === 0 ) {
 	console.log( "number of people eating tacos is required!" );
