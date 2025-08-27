@@ -22,7 +22,7 @@ if ( options._.length === 0 ) {
 const people = options._[0];
 
 const tacos = people * options.tacosPerPerson;
-const tacoText = (tacos === 1 ) ? "taco!" : "tacos!";
+const tacoText = ( tacos === 1 ) ? "taco!" : "tacos!";
 
 const output = [
 	chalk.cyan( "You're gonna need at least" ),
